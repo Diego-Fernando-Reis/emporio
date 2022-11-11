@@ -64,6 +64,8 @@ Default CSS
   --transition: .5s;
 }
 
+
+
 body {
   padding: 0;
   margin: 0;
@@ -343,10 +345,12 @@ Navbar Area CSS
 =================================================*/
 .navbar {
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background-color: #593831;
 }
+
+.navbar
 
 .navbar.is-sticky {
   position: fixed;
@@ -472,7 +476,7 @@ Navbar Area CSS
 }
 
 .navbar img{
-  width: 80px;
+  width: 120px;
 }
 
 .navbar2 ul{
@@ -4587,7 +4591,7 @@ Copy Right CSS
 }
 
 .copy-right img{
-  width: 300px;
+  width: 400px;
 }
 
 .copy-right .interno{
@@ -4603,7 +4607,7 @@ Copy Right CSS
 }
 
 .navbar img{
-  width: 200px;
+  width: 400px;
 }
 /*================================================
 Go Top CSS
@@ -5266,7 +5270,7 @@ footer p{
 }
 
 .conceito{
-  width: 80%;
+  max-width: 80%;
   margin: 50px auto;
   display: flex;
   margin-right: 10px;
@@ -5311,3 +5315,35 @@ footer p{
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 1200px ) {
+  .navbar-collapse{
+    display: none;
+  }
+
+  .navbar2 ul{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .conceito{
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+    display: block;
+  }
+
+  .conceito{
+    margin-right: 0;
+  }
+
+  .conceito img{
+    display: none;
+  }
+  .copy-right .interno{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-between;
+  }
+}
